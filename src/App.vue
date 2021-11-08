@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <EditorWordCounter />
-    <MessageEditor />
+    <p>Mssage: {{ message }}</p>
+    <MessageEditor @send="message = $event" />
+    <button @click="message = null">Reset</button>
   </div>
 </template>
 
@@ -14,6 +16,11 @@ export default {
   components: {
     EditorWordCounter,
     MessageEditor,
+  },
+  data() {
+    return {
+      message: null,
+    };
   },
 };
 </script>

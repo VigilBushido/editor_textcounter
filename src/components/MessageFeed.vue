@@ -11,9 +11,10 @@ export default {
   props: {
     messages: {
       type: Array,
-      required: true
-    }
-}
+      required: true,
+    },
+  },
+};
 </script>
 
 <style></style>

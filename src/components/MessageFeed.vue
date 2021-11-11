@@ -7,6 +7,8 @@
 </template>
 
 <script>
+import "core-js/es/array";
+
 export default {
   props: {
     messages: {
